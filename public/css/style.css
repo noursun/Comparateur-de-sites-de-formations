@@ -1,0 +1,395 @@
+
+/*-------------------------------------------------- GENERAL  --------------------------------------------------------*/
+
+body
+{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site
+{
+    width: 90%;
+    margin: 4%;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px #c9c9c9;
+}
+
+.menu_pub_contenu
+{
+    margin: 20px 20px 0 10px;
+    display: flex;
+}
+
+/*-------------------------------------------------- LOGO --------------------------------------------------------*/
+
+#logo
+{
+    height: 10%;
+    background-color: #34a6a8;
+    padding: 5px 0 0 10px;
+}
+
+#logo label
+{
+    font-family:  monospace;
+    font-size: 30px;
+    color: #ffc926;
+    font-weight: bold;
+}
+
+#logo em
+{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/*-------------------------------------------------- DIAPORAMA --------------------------------------------------------*/
+
+.diaporama
+{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    background-image: url('../img/5.jpg');
+    animation: 9s diapo1 infinite normal;
+    
+}
+
+@keyframes diapo1
+{
+  0%{background-image: url('../img/5.jpg');}
+  33%{background-image: url('../img/4.jpg');}
+  66%{background-image: url('../img/6.jpg');}
+}
+
+/*------------------------------------------------------- MENU & PUB ---------------------------------------------------*/
+
+.menu_pub
+{
+    width: 20%;
+}
+
+.menu
+{
+    background-color: #ebebeb;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0 0 7px 7px;
+}
+
+.menu div
+{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0 10px 0;
+    background-color: #34a6a8;
+    border-radius: 0 0 7px 7px;
+}
+.menu a
+{
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu div:hover
+{
+    background-color: #ffc926;
+}
+
+.pub
+
+{
+    margin: 20px 0 0 0;
+    background-color: #ebebeb;
+    border-radius: 0 0 7px 7px;
+}
+
+.pub div
+{
+    padding: 10px 10px 10px 10px;
+}
+
+.pub img
+{
+    width: 100%;
+}
+
+/*------------------------------------------------------- FOOTER ---------------------------------------------------*/
+
+footer
+{
+    margin: 20px 0 0 0;
+    padding: 20px 10px 20px ;
+    background-color: #34a6a8;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a
+{
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: #ffc926;
+}
+
+/*------------------------------------------------------- CONTENU ---------------------------------------------------*/
+
+.contenu
+{
+    margin: 40px 20px 20px 40px;
+    width: 100%;
+}
+
+.cadreForm
+{
+    width: 100%;
+    height: 200px;
+    margin: 40px 0 40px 0;
+    display: flex;
+    justify-content:  flex-start;
+}
+
+.titreForm
+{
+    background-color: #ffc926;
+    opacity: 0.7;
+    padding: 10px 5px 2px 5px;
+
+}
+
+.titreForm a
+{
+    color : #000000;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------- TABLE ---------------------------------------------------*/
+
+.tableEcole
+{
+    width: 100%;
+}
+
+.tableEcole tr
+{
+    display: block;
+    margin: 0 0 15px 0;
+    width: 100%;
+    border-bottom: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+    border-radius: 0 0 7px 0;
+}
+
+
+.tableEcole td 
+{
+    display:  inline-block;
+    padding: 10px 5px 0 5px;
+    min-width: 100px;
+    max-width: 110px;
+    color: rgb(70,70,70);
+}
+
+.tableEcole thead td
+{
+    color: #34a6a8;
+}
+
+.tableEcole .commentaire
+{
+    color: #ffc926;
+}
+
+/*------------------------------------------------------- FILTRE ---------------------------------------------------*/
+
+.filtre
+{
+    display: flex;
+    margin: 0 0 30px 0;
+}
+
+.filtre div
+{
+    margin: 0 20px 0 0;
+}
+
+.selectFiltre
+{
+    padding: 2px 5px 2px 5px;
+    border-color: #34a6a8;
+    color: #34a6a8;
+}
+
+.btnFiltrer
+{
+    padding: 4px 13px 4px 13px;
+    background-color: #34a6a8;
+    border-style: none;
+    border-radius: 2px 2px 2px 2px;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px 1px #b8b8b8;
+}
+
+/*-------------------------------------------------- TITRE PAGE FORMATION --------------------------------------------*/
+
+.titrePageForm
+{
+    color: #34a6a8;
+    font-size: 25px;
+    margin: 0 0 30px 0;
+    border-bottom: 1px solid #34a6a8;
+}
+
+/*-------------------------------------------------- LOGIN --------------------------------------------*/
+
+.lienLogin
+{
+    background-color: #34a6a8;
+    padding: 2px 30px 5px 15px;
+    opacity: 0.7;
+    display: flex;
+    justify-content:  flex-end;
+}
+
+.lienLogin a
+{
+    color: #ffffff;
+    font-family:  monospace;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 3px 3px 3px 3px;
+    padding: 3px 8px 3px 8px;
+}
+
+.blocLogin
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 15%;
+}
+
+.inputLogin
+{
+    padding: 5px 15px 5px 15px;
+}
+
+.btnLogin
+{
+    color: darkslategray;
+    padding: 3px 10px 3px 10px;
+}
+
+/*-------------------------------------------------- COMMENTAIRE --------------------------------------------*/
+
+.pageCommentaire
+{
+    width: max-content;
+    min-height: 900px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px #c9c9c9;
+    padding: 20px 20px 20px 20px;
+}
+
+.blocNewCommentaire
+{
+    margin: 20px 0 40px 0;
+}
+
+.pageCommentaire input
+{
+    color:  rgb(88,88,88);
+    padding: 3px 10px 3px 10px;
+    margin: 5px 0 0 0;
+}
+
+.blocNewCommentaire textarea
+{
+    border-width:1px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.blocCommentaire
+{
+    margin: 10px 0 10px 0;
+}
+
+.blocCommentaire textarea
+{
+    border: 1px solid #34a6a8;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.blocRep
+{
+    margin: 10px 0 10px 50px;
+}
+
+.blocRep textarea
+{
+    border: 1px solid #ffc926;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+/*-------------------------------------------------- COMPARAISON --------------------------------------------*/
+
+.compareCommentaire
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-------------------------------------------------- GESTION ECOLE --------------------------------------------*/
+
+.ajouterEcole
+{
+    width: 50%;
+    border: 1px solid #34a6a8;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 10px 0;
+}
+
+.ajouterEcole div
+{
+    margin: 0 0 10px 0;
+}
+
+.ajouterEcole input
+{
+    border: 1px solid #34a6a8;
+    padding: 3px 5px 3px 5px;
+    width: 100%;
+}
+
+.ajouterEcole select
+{
+    border: 1px solid #34a6a8;
+    padding: 3px 5px 3px 5px;
+}
+
+.blocTextAjout
+{
+    margin: 0 0 5px 10px;
+}
+
+.blocTextAjout label
+{
+    color: #34a6a8;
+}
